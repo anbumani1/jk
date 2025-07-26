@@ -1,0 +1,4 @@
+ID,firstName,lastName,email,department,startDate,endDate,status,manager
+1,John,Doe,john.doe@company.com,IT,2024-01-15,2024-06-15,Active,jane.smith@company.com
+2,Sarah,Johnson,sarah.johnson@company.com,Finance,2024-02-01,2024-07-01,Active,mike.brown@company.com
+3,Alex,Chen,alex.chen@company.com,IT,2024-01-01,2023-12-31,Completed,jane.smith@company.com

@@ -3,20 +3,32 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "cds run",
+    "start": "node start-server.js",
+    "start:dev": "node index.js",
     "watch": "cds watch",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node test-setup.js",
+    "test:setup": "node test-setup.js",
     "build": "cds build",
     "deploy": "cds deploy"
   },
-  "keywords": [],
+  "keywords": ["SAP", "CAP", "GenAI", "Onboarding", "Intern"],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "AI-powered Intern Onboarding Portal using SAP CAP and GenAI",
   "dependencies": {
     "@sap/cds": "^8.9.5",
     "axios": "^1.11.0",
     "dotenv": "^17.2.1",
     "express": "^4.21.2"
+  },
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "credentials": {
+          "url": "db.sqlite"
+        }
+      }
+    }
   }
 }

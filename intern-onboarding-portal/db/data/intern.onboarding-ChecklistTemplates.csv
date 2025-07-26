@@ -1,0 +1,11 @@
+ID,title,description,category,isRequired,order,department,estimatedDays
+1,Complete HR Documentation,Fill out all required HR forms including tax documents and emergency contacts,HR,true,1,,1
+2,IT Setup - Laptop and Accounts,Receive laptop and get all necessary system accounts created,IT,true,2,,1
+3,SAP System Access,Get access to SAP systems and complete basic navigation training,SAP,true,3,,2
+4,Security Training,Complete mandatory security awareness training,Security,true,4,,3
+5,Department Introduction,Meet with team members and understand department structure,General,true,5,,2
+6,SAP BTP Overview,Learn about SAP Business Technology Platform basics,SAP,true,6,IT,5
+7,Company Policies Review,Read and acknowledge company policies and procedures,HR,true,7,,3
+8,Mentor Assignment,Get assigned a mentor and schedule first meeting,General,true,8,,1
+9,Project Assignment,Receive first project assignment and understand expectations,General,false,9,,7
+10,SAP Fiori Training,Complete SAP Fiori development training modules,SAP,false,10,IT,14

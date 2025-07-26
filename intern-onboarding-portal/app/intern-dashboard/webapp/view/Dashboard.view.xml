@@ -1,0 +1,130 @@
+<mvc:View
+    controllerName="intern.dashboard.controller.Dashboard"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:f="sap.f"
+    xmlns:card="sap.f.cards">
+    
+    <Page id="dashboardPage" title="Intern Onboarding Dashboard" showNavButton="false">
+        <content>
+            <f:DynamicPage id="dynamicPageId" headerExpanded="true">
+                
+                <!-- Header -->
+                <f:title>
+                    <f:DynamicPageTitle>
+                        <f:heading>
+                            <Title text="Welcome, {internModel>/currentIntern/firstName} {internModel>/currentIntern/lastName}!" />
+                        </f:heading>
+                        <f:subHeading>
+                            <Text text="{internModel>/currentIntern/department} Department • Started {internModel>/currentIntern/startDate}" />
+                        </f:subHeading>
+                    </f:DynamicPageTitle>
+                </f:title>
+                
+                <!-- Header Content -->
+                <f:header>
+                    <f:DynamicPageHeader>
+                        <HBox class="sapUiMediumMargin">
+                            <!-- Progress Card -->
+                            <VBox class="sapUiMediumMarginEnd">
+                                <f:Card class="sapUiMediumMargin" width="300px">
+                                    <f:header>
+                                        <card:Header title="Onboarding Progress" />
+                                    </f:header>
+                                    <f:content>
+                                        <VBox class="sapUiMediumMargin">
+                                            <ProgressIndicator 
+                                                percentValue="{internModel>/progress/progressPercentage}" 
+                                                displayValue="{internModel>/progress/completedTasks}/{internModel>/progress/totalTasks} Tasks Completed"
+                                                state="Success" />
+                                            <HBox class="sapUiSmallMarginTop">
+                                                <Text text="Overdue: " />
+                                                <Text text="{internModel>/progress/overdueTasks}" class="sapUiTinyMarginBegin" />
+                                            </HBox>
+                                        </VBox>
+                                    </f:content>
+                                </f:Card>
+                            </VBox>
+                            
+                            <!-- Quick Actions -->
+                            <VBox class="sapUiMediumMarginEnd">
+                                <f:Card class="sapUiMediumMargin" width="300px">
+                                    <f:header>
+                                        <card:Header title="Quick Actions" />
+                                    </f:header>
+                                    <f:content>
+                                        <VBox class="sapUiMediumMargin">
+                                            <Button text="Ask AI Assistant" press="onOpenChatAssistant" type="Emphasized" />
+                                            <Button text="View All Tasks" press="onViewTasks" class="sapUiTinyMarginTop" />
+                                            <Button text="Browse Guides" press="onViewGuides" class="sapUiTinyMarginTop" />
+                                        </VBox>
+                                    </f:content>
+                                </f:Card>
+                            </VBox>
+                        </HBox>
+                    </f:DynamicPageHeader>
+                </f:header>
+                
+                <!-- Main Content -->
+                <f:content>
+                    <VBox class="sapUiMediumMargin">
+                        
+                        <!-- Upcoming Deadlines -->
+                        <f:Card class="sapUiMediumMarginBottom">
+                            <f:header>
+                                <card:Header title="Upcoming Deadlines" />
+                            </f:header>
+                            <f:content>
+                                <Table id="deadlinesTable" items="{internModel>/upcomingDeadlines}" growing="true" growingThreshold="5">
+                                    <columns>
+                                        <Column>
+                                            <Text text="Task" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Due Date" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Priority" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Actions" />
+                                        </Column>
+                                    </columns>
+                                    <items>
+                                        <ColumnListItem>
+                                            <cells>
+                                                <Text text="{internModel>title}" />
+                                                <Text text="{internModel>dueDate}" />
+                                                <ObjectStatus 
+                                                    text="{internModel>priority}" 
+                                                    state="{path: 'internModel>priority', formatter: '.formatPriorityState'}" />
+                                                <Button text="View Details" press="onViewTaskDetails" />
+                                            </cells>
+                                        </ColumnListItem>
+                                    </items>
+                                </Table>
+                            </f:content>
+                        </f:Card>
+                        
+                        <!-- Recent Activity -->
+                        <f:Card>
+                            <f:header>
+                                <card:Header title="Recent Activity" />
+                            </f:header>
+                            <f:content>
+                                <List id="activityList" items="{internModel>/recentActivity}">
+                                    <StandardListItem 
+                                        title="{internModel>title}" 
+                                        description="{internModel>description}"
+                                        info="{internModel>timestamp}" />
+                                </List>
+                            </f:content>
+                        </f:Card>
+                        
+                    </VBox>
+                </f:content>
+            </f:DynamicPage>
+        </content>
+    </Page>
+</mvc:View>
