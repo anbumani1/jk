@@ -1,0 +1,22 @@
+{
+  "name": "intern-onboarding-portal",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "cds run",
+    "watch": "cds watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cds build",
+    "deploy": "cds deploy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@sap/cds": "^8.9.5",
+    "axios": "^1.11.0",
+    "dotenv": "^17.2.1",
+    "express": "^4.21.2"
+  }
+}
