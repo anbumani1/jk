@@ -1,0 +1,36 @@
+{
+  "name": "intern-onboarding",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "cds run",
+    "watch": "cds watch",
+    "build": "cds build",
+    "deploy": "cds deploy",
+    "test": "jest"
+  },
+  "keywords": [
+    "sap",
+    "cap",
+    "intern",
+    "onboarding"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "SAP CAP application for intern onboarding management",
+  "dependencies": {
+    "@cap-js/sqlite": "^2.0.2",
+    "@sap/cds": "^9.1.0",
+    "@sap/cds-dk": "^9.1.2"
+  },
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "credentials": {
+          "database": "db/intern-onboarding.db"
+        }
+      }
+    }
+  }
+}

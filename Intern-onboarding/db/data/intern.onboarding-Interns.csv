@@ -1,0 +1,4 @@
+ID;firstName;lastName;email;department;startDate;mentor_ID;status;createdAt;modifiedAt
+201;Emma;Thompson;emma.thompson@company.com;Engineering;2024-07-01;101;Active;2024-07-01T09:00:00Z;2024-07-01T09:00:00Z
+202;James;Rodriguez;james.rodriguez@company.com;Marketing;2024-07-15;102;Active;2024-07-15T09:00:00Z;2024-07-15T09:00:00Z
+203;Sophia;Chen;sophia.chen@company.com;Human Resources;2024-08-01;103;Active;2024-08-01T09:00:00Z;2024-08-01T09:00:00Z

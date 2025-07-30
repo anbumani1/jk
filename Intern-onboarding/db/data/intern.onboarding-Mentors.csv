@@ -1,0 +1,5 @@
+ID;firstName;lastName;email;department;createdAt;modifiedAt
+101;Alice;Johnson;alice.johnson@company.com;Engineering;2024-01-15T10:00:00Z;2024-01-15T10:00:00Z
+102;Bob;Smith;bob.smith@company.com;Marketing;2024-01-15T10:00:00Z;2024-01-15T10:00:00Z
+103;Carol;Davis;carol.davis@company.com;Human Resources;2024-01-15T10:00:00Z;2024-01-15T10:00:00Z
+104;David;Wilson;david.wilson@company.com;Finance;2024-01-15T10:00:00Z;2024-01-15T10:00:00Z

@@ -1,0 +1,7 @@
+ID;title;description;dueDate;status;priority;intern_ID;createdAt;modifiedAt
+301;Complete Onboarding Documentation;Fill out all required onboarding forms and documentation;2024-07-05;Completed;High;201;2024-07-01T10:00:00Z;2024-07-05T14:00:00Z
+302;Setup Development Environment;Install and configure development tools and access;2024-07-03;Completed;High;201;2024-07-01T10:00:00Z;2024-07-03T16:00:00Z
+303;Attend Team Introduction Meeting;Meet with team members and understand project structure;2024-07-02;Completed;Medium;201;2024-07-01T10:00:00Z;2024-07-02T11:00:00Z
+304;Review Marketing Guidelines;Study company marketing guidelines and brand standards;2024-07-20;In Progress;Medium;202;2024-07-15T10:00:00Z;2024-07-15T10:00:00Z
+305;Create First Campaign Draft;Develop initial draft for upcoming marketing campaign;2024-07-25;Pending;High;202;2024-07-15T10:00:00Z;2024-07-15T10:00:00Z
+306;HR Policy Training;Complete mandatory HR policy and compliance training;2024-08-05;Pending;High;203;2024-08-01T10:00:00Z;2024-08-01T10:00:00Z

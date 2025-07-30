@@ -1,6 +1,0 @@
-ID,title,description,content,category,difficulty,estimatedTime,isActive,version
-1,SAP BTP Getting Started,Introduction to SAP Business Technology Platform,"Welcome to SAP BTP! This guide covers the basics of navigating the platform, understanding key services, and getting started with development.",SAP,Beginner,60,true,1.0
-2,CAP Development Basics,Learn Cloud Application Programming Model fundamentals,"This guide introduces you to CAP (Cloud Application Programming Model), covering entity modeling, service creation, and basic development patterns.",SAP,Intermediate,120,true,1.0
-3,Company IT Policies,Understanding IT security and usage policies,"Review of company IT policies including password requirements, software installation guidelines, and security best practices.",IT,Beginner,30,true,1.0
-4,HR Onboarding Guide,Complete guide to HR processes and benefits,"Comprehensive overview of HR processes, benefits enrollment, time tracking, and company culture.",HR,Beginner,45,true,1.0
-5,SAP Fiori Development,Building modern UIs with SAP Fiori,"Learn how to create responsive, user-friendly applications using SAP Fiori design principles and UI5 framework.",SAP,Advanced,180,true,1.0
